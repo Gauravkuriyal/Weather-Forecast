@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background: skyblue;
+            gap: 10px;
+            overflow: hidden;
+        }
+        h1{
+            
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px;
+            gap: 20px;
+            width: fit-content;
+            background-color: rgba(255, 255, 255, 0.366);
+            border-radius: 5px;
+        }
+        #city{
+            padding: 10px;
+            outline: none;
+            border-radius: 5px;
+        }
+        #submit{
+            padding: 10px 12px;
+            border-radius: 5px;
+            width: fit-content;
+            cursor: pointer;
+            background-color: white;
+            color: blue;
+            border: 2px solid lightblue;
+            transition: all 500ms;
+        }
+        #submit:hover{
+            background-color: lightblue;
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="index.html"> -->
+    <div>
+        <h1>Weather Forecast</h1>
+        <input type="text" required id="city" placeholder="Enter City Name">
+
+        <input type="submit" id="submit" value="SUBMIT">
+    </div>
+    <!-- </form> -->
+    <script src="script.js"></script>
+</body>
+</html>

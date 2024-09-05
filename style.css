@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: rgb(20, 175, 236);
+    padding: 5% 5%;
+    /* background: url("cloud.gif"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 30px;
+}
+.cloudy{
+    background: url("cloud.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rainy{
+    background: url("rainy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hot{
+    background: url("hot.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cold{
+    background: url("snow.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shadow{
+    align-self: center;
+    /* box-shadow: inset 8px 8px 11px #00000073; */
+    width: fit-content;
+}
+.information{
+    padding: 42px 25px;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(5px);
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    min-width: 200px;
+    align-self: center;
+    position: relative;
+    font-size: 15px;
+    z-index: -2;
+    
+    border-radius: 5px;
+    border: 1px solid white;
+    /* box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.639); */
+}
+.information p{
+    display: inline-block;
+}
+
+.temp_cir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    border-radius: 50%;
+    background: inherit;
+    border: 2px solid white;
+    font-size: 30px;
+    right: 5px;
+    top: 35%;
+    text-shadow: 0 0 13px black;
+}
+
+section:nth-child(1){
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    padding: 42px 25px;
+    width: fit-content;
+    backdrop-filter: blur(5px);
+    color: white;
+    gap: 20px;
+    border-radius: 5px;
+    min-width: 200px;
+    position: relative;
+    font-size: 15px;
+    z-index: -2;
+    border-radius: 5px;
+    border: 1px solid white;
+
+}
+.panel h2{
+    text-align: center;
+}
+
+.panel p{
+    display: inline-block;
+}
+
+.other ul{
+    list-style: none;
+    line-height: 180%;
+    margin-top: 10px;
+}
+
